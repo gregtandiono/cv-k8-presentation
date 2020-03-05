@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cv-app-0
-        image: cv-app-0:v1
+        image: cv-app-0:v1.5
         ports:
         - containerPort: 4001
           name: cv-app-0
