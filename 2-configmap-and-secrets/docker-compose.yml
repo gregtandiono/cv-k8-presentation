@@ -1,14 +1,14 @@
 version: "3.7"
 services:
   app-0:
-    image: cv-app-0
+    image: cv-app-0:v2
     build:
       context: ./app-0
     ports:
       - 4001:4001
 
   app-1:
-    image: cv-app-1
+    image: cv-app-1:v2
     build:
       context: ./app-1
     ports:

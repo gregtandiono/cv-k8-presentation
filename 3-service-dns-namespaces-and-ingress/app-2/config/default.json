@@ -1,5 +1,5 @@
 {
-  "port": 4002,
+  "port": 4003,
   "bootMessage": "BOOT_MESSAGE",
   "defaultResponse": "DEFAULT_RESPONSE",
   "secretURL": "SECRET_URL",

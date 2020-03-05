@@ -16,13 +16,18 @@ spec:
     spec:
       containers:
       - name: cv-app-0
-        image: cv-app-0:v1
+        image: cv-app-0:v2
+        envFrom:
+        - configMapRef:
+            name: app-config
+        - secretRef:
+            name: app-secret
         ports:
         - containerPort: 4001
           name: cv-app-0
 
       - name: cv-app-1
-        image: cv-app-1:v1
+        image: cv-app-1:v2
         ports:
         - containerPort: 4002
           name: cv-app-1

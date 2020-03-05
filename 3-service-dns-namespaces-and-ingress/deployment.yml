@@ -16,13 +16,41 @@ spec:
     spec:
       containers:
       - name: cv-app-0
-        image: cv-app-0:v1
+        image: cv-app-0:v3
+        envFrom:
+        - configMapRef:
+            name: app-config
+        - secretRef:
+            name: app-secret
         ports:
         - containerPort: 4001
           name: cv-app-0
 
       - name: cv-app-1
-        image: cv-app-1:v1
+        image: cv-app-1:v3
         ports:
         - containerPort: 4002
           name: cv-app-1
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: external
+  labels:
+    app: external
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: external
+  template:
+    metadata:
+      labels:
+        app: external
+    spec:
+      containers:
+      - name: cv-app-2
+        image: cv-app-2:v1
+        ports:
+        - containerPort: 4003
+          name: cv-app-2
