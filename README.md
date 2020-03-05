@@ -1,12 +1,12 @@
 # ClearView K8 Presentation
 
-Google Slide Link: https://docs.google.com/presentation/d/1i6vorgj06AGJ3vitxo1JN6EHE6hxT_KvKyMYanU_D5c/edit?usp=sharing
+Google Slide Link (accessible only to CV members): https://docs.google.com/presentation/d/1i6vorgj06AGJ3vitxo1JN6EHE6hxT_KvKyMYanU_D5c/edit?usp=sharing
 
 Pre-requisite:
-- Docker
-- Docker Compose
-- Kubectl
-- Minikube
+- [Docker](https://docs.docker.com/install/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+- [Kubectl (Kube Control)](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux)
+- [Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
 
 ## Important notes
 
