@@ -1,0 +1,6 @@
+{
+  "bootMessage": "BOOT_MESSAGE",
+  "defaultResponse": "DEFAULT_RESPONSE",
+  "secretURL": "SECRET_URL",
+  "extAPI": "EXT_API"
+}

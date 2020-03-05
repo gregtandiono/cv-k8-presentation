@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  BOOT_MESSAGE: application node-0 is running in a minikube cluster 000
+  DEFAULT_RESPONSE: node-0 is running with 0 errors.

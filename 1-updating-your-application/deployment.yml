@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: node
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      containers:
+      - name: cv-app-0
+        image: cv-app-0:v1
+        ports:
+        - containerPort: 4001
+          name: cv-app-0
+
+      - name: cv-app-1
+        image: cv-app-1:v1
+        ports:
+        - containerPort: 4002
+          name: cv-app-1
