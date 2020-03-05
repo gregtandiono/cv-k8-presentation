@@ -1,5 +1,7 @@
 # ClearView K8 Presentation
 
+Google Slide Link: https://docs.google.com/presentation/d/1i6vorgj06AGJ3vitxo1JN6EHE6hxT_KvKyMYanU_D5c/edit?usp=sharing
+
 Pre-requisite:
 - Docker
 - Docker Compose
